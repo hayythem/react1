@@ -1,11 +1,7 @@
-import product from "../product"
+import product from "../product";
 
 function Description() {
-  return (
-      <p>
-          {product.description}
-    </p>
-  )
+  return <p>{product.description}</p>;
 }
 
-export default Description
+export default Description;

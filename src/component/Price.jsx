@@ -1,11 +1,7 @@
-import product from "../product"
+import product from "../product";
 
 function Price() {
-  return (
-    <h3>
-      {product.price}DT
-    </h3>
-  )
+  return <h3>{product.price}DT</h3>;
 }
 
-export default Price
+export default Price;

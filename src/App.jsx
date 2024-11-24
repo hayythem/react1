@@ -2,17 +2,17 @@ import { Button, Card, CardFooter } from "react-bootstrap";
 
 import Image from "./component/Image";
 import Description from "./component/Description";
-import Name from "./component/name";
+import Name from "./component/Name";
 import Price from "./component/Price";
 function App() {
-  let firstName=""
+  let firstName = "";
   return (
     <div>
-      <Card bg="info" text="dark"  style={{ width: "18rem" }}>
+      <Card bg="info" text="dark" style={{ width: "18rem" }}>
         <Image />
         <Card.Body>
           <Card.Title>
-          <Name />
+            <Name />
           </Card.Title>
           <Card.Subtitle>
             <Price />
@@ -22,8 +22,10 @@ function App() {
           </Card.Text>
           <Button variant="primary">Go somewhere</Button>
         </Card.Body>
-        <CardFooter> Hello {firstName ? firstName : "there"}
-        {firstName && "<3" }
+        <CardFooter>
+          {" "}
+          Hello {firstName ? firstName : "there"}
+          {firstName && "<3"}
         </CardFooter>
       </Card>
     </div>
